@@ -1,20 +1,30 @@
-# Congratulations! :tada:
+Agency Jekyll theme
+====================
 
-<img src="https://octodex.github.com/images/welcometocat.png" align="right" height="250px" />
+Agency theme based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
 
-Yay **JulienTao** you finished the exercise! Nice work :tada:
+# How to use
 
-If you would like to retrace your steps, you can always revisit the exercise.
+###Portfolio 
 
-[![](https://img.shields.io/badge/Return%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/JulienTao/skills-github-pages/issues/1)
+Portfolio projects are in '/_posts'
 
-> [!TIP]
-> Mona won't grade you this time! 😉
+Images are in '/img/portfolio'
+
+###About
+
+Images are in '/img/about/'
+
+###Team
+
+Team members and info are in '_config.yml'
+
+Images are in '/img/team/'
 
 
-### Craving more? :raising_hand:
+# Demo
 
-Did you enjoy this practical style of learning? There's no better way to learn than building things, right?!
+View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
 
-Let's keep the momentum going! Head over to [GitHub Skills](https://skills.github.com) catalog to find another hands-on exercise. :rocket:
-
+=========
+For more details, read [documentation](http://jekyllrb.com/)
