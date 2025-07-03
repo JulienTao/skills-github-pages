@@ -1,20 +1,122 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Julien Tao</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
 
-<div class="home">
+    header {
+      text-align: center;
+      padding: 20px 10px 10px;
+      background: white;
+      position: relative;
+    }
 
-  <h1>Posts</h1>
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    .lang-switch button {
+      margin-left: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    .email-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px auto;
+      gap: 10px;
+    }
 
-</div>
+    .email-box input {
+      padding: 10px;
+      width: 250px;
+      font-size: 14px;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    .photo-cell {
+      background-color: #ddd;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-style: italic;
+      color: #555;
+    }
+
+    .special-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px auto 40px;
+      max-width: 800px;
+    }
+
+    .special-button {
+      background: white;
+      border: 2px solid #ccc;
+      padding: 15px;
+      width: 30%;
+      text-align: center;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    .special-button:hover {
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JULIEN TAO</h1>
+    <div class="lang-switch">
+      <button>Fr</button>
+      <button>Engl.</button>
+    </div>
+  </header>
+
+  <div class="email-box">
+    <span>📧</span>
+    <input type="email" placeholder="your email">
+  </div>
+
+  <div class="photo-grid">
+    <div class="photo-cell">photo</div>
+    <div class="photo-cell">photo</div>
+    <div class="photo-cell">photo</div>
+    <div class="photo-cell">photo</div>
+    <div class="photo-cell">photo</div>
+    <div class="photo-cell">photo</div>
+    <div class="photo-cell">photo</div>
+    <div class="photo-cell">photo</div>
+  </div>
+
+  <div class="special-buttons">
+    <div class="special-button">🎧 special audio content</div>
+    <div class="special-button">✏️ bla bla bla</div>
+    <div class="special-button">🎥 special video content</div>
+  </div>
+
+</body>
+</html>
